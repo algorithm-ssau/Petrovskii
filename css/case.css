@@ -190,4 +190,14 @@ text-align: center;
 .case-name-header {
   color: #fff; 
 }
-
+@media (max-width: 1240px) {
+.left-info,
+.right-info{
+    width: 100%;
+    text-align: left;
+    margin-top: 1vh;
+}   
+.all-info{
+    display: block;
+} 
+}
