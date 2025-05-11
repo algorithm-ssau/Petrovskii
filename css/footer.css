@@ -1,0 +1,218 @@
+.footer{
+    padding-top: 2vh;
+    border-top: 1px solid #ccc;
+    display: flex;
+    gap: 5%;
+    align-items: stretch;
+    min-height: 300px;
+    height: 600px;
+    margin-bottom: 4vh;
+    padding-left: 2%;
+    padding-right: 2%;
+    
+}
+.footer-left,
+.footer-middle,
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 30%;
+    max-width: 30%;
+    height: 100%;
+}
+.grey-text{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%; 
+    color: #939393;   
+    padding-bottom: 2vh;
+}
+.footer-menu{
+    margin-top: auto;
+}
+.nav-text{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0%;   
+    text-decoration: none;
+    color: #000000;  
+    transition: color 0.3s ease;
+}
+.nav-text:hover{
+    color: #949494;  
+}
+.lapss-2025{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+.some-text{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin-top: auto;
+    max-width: 90%;
+}
+.contact-text{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 200%;
+    letter-spacing: 0%;
+}
+.time,
+.location-text{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    
+}
+.location-text{
+   margin-top: 1vh; 
+}
+.social-text{
+    cursor: pointer;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    margin-top: 1vh;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    color: #000000;
+}
+.social-text:hover{
+    color: #949494;  
+}
+.social-media{
+    margin-top: auto;
+}
+
+@media (max-width: 1240px) {
+    .grey-text{
+        font-size: 12px;
+    }
+    .nav-text{
+        font-size: 32px;
+    }
+    .lapss-2025{
+        font-family: Inter;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+    }
+    .some-text{
+        font-family: Inter;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        margin-top: auto;
+        max-width: 90%;
+    }
+    .contact-text{
+        font-family: Inter;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 200%;
+        letter-spacing: 0%;
+    }
+    .time,
+    .location-text{
+        font-family: Inter;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        
+    }
+    .footer{
+        height: 400px;
+        
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .footer{
+        padding-top: 2vh;
+        border-top: 1px solid #ccc;
+        display: block;
+        gap: 0%;
+        align-items: stretch;
+        min-height: 300px;
+        height: auto;
+        margin-bottom: 4vh;
+        padding-left: 2%;
+        padding-right: 2%;
+        
+    }
+.footer-left,
+.footer-middle,
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 95%;
+    max-width: 95%;
+    height: 100%;
+}
+.lapss-2025{
+    margin-bottom: 1vh;
+}
+.some-text{
+    margin-bottom: 3vh;
+}
+.contact-text{
+
+    line-height: 150%;
+    
+}
+.contacts{
+    margin-bottom: 3vh;
+}
+.grey-text{
+    padding-bottom: 1vh;}
+.nav-text{
+        font-size: 56px;
+        margin-bottom: 2vh;
+    }
+    .footer-menu{
+        margin-bottom: 2vh;
+    }
+    .footer-right{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        min-width: 95%;
+        max-width: 95%;
+        height: 100%;
+        margin-top: 2vh;
+    }
+    .time,
+    .location-text{
+        font-family: Inter;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        
+    }
+    .social-text{
+        margin-top: 0vh;
+        padding-bottom: 1vh;
+    }
+}

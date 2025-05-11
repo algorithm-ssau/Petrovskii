@@ -1,0 +1,26 @@
+
+.footer{
+    padding-top: 2vh;
+    border-top: 1px solid #ccc;
+    display: flex;
+    gap: 5%;
+    align-items: stretch;
+    min-height: 300px;
+    height: 85vh;
+    margin-bottom: 4vh;
+    
+}
+@media (max-width: 768px) {
+    .footer{
+        padding-top: 2vh;
+        border-top: 1px solid #ccc;
+        display: block;
+        gap: 0%;
+        align-items: stretch;
+        min-height: 0px;
+        height: auto;
+        margin-bottom: 4vh;
+        
+    }
+        
+    }
