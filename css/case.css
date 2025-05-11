@@ -201,3 +201,9 @@ text-align: center;
     display: block;
 } 
 }
+@media (max-width: 768px) {
+.all-info{
+    max-width: 90%;
+}
+}
+
