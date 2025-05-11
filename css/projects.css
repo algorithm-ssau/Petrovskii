@@ -708,4 +708,11 @@ body {
         .Filter-items{
             margin-left: 10%;
         }
+        .cursor-view {
+            display: none;
+}
+.preview-of-work:hover ~ .cursor-view,
+.preview-of-work:hover img {
+    cursor: auto;
+}
     }
