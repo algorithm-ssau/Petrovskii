@@ -1,15 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
     let scene, camera, renderer, model;
 
-    function getScaleByWindowWidth(width) {
-        
-        return 3;
-    }
+    // Обновление размеров контейнера
     function updateModelContainerSize() {
         const container = document.getElementById('model-container');
         const w = window.innerWidth;
         let size;
-    
+
         if (w <= 768) {
             size = w - 40;
         } else if (w <= 1600) {
@@ -17,16 +14,23 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             size = w / 3 - 40;
         }
-    
+
         // Устанавливаем одинаковую ширину и высоту
         container.style.width = `${size}px`;
         container.style.height = `${size}px`;
+        
+        // Обновление рендерера и камеры
+        if (renderer) {
+            renderer.setSize(container.clientWidth, container.clientHeight);
+            camera.aspect = container.clientWidth / container.clientHeight;
+            camera.updateProjectionMatrix();
+        }
     }
-    
-    // Запустить при загрузке страницы
+
+    // Запуск обновления при загрузке страницы
     window.addEventListener('DOMContentLoaded', updateModelContainerSize);
-    
-    // Запустить при изменении размера окна
+
+    // Запуск при изменении размера окна
     window.addEventListener('resize', updateModelContainerSize);
 
     function init() {
@@ -46,10 +50,8 @@ document.addEventListener('DOMContentLoaded', () => {
         renderer.shadowMap.enabled = true;
         renderer.shadowMap.type = THREE.PCFSoftShadowMap;
 
-        // 2. Настройка контейнера
         const container = document.getElementById('model-container');
-        renderer.setSize(container.clientWidth, container.clientHeight);
-        container.appendChild(renderer.domElement);
+        container.appendChild(renderer.domElement);  // Вставка рендерера в контейнер
 
         // Вспомогательный окружающий свет
         const ambient = new THREE.AmbientLight(0xffffff, 1.5);
@@ -77,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
 
                 // Масштабирование в зависимости от ширины окна браузера
-                const scaleFactor = getScaleByWindowWidth(window.innerWidth);
+                const scaleFactor = 3;
                 model.scale.set(scaleFactor, scaleFactor, scaleFactor);
                 scene.add(model);
 
@@ -103,16 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 6. Обработка ресайза
         window.addEventListener('resize', () => {
-            const container = document.getElementById('model-container');
-            camera.aspect = container.clientWidth / container.clientHeight;
-            camera.updateProjectionMatrix();
-            renderer.setSize(container.clientWidth, container.clientHeight);
-
-            // Обновляем масштаб модели при ресайзе
-            if (model) {
-                const newScale = getScaleByWindowWidth(window.innerWidth);
-                model.scale.set(newScale, newScale, newScale);
-            }
+            updateModelContainerSize();
         });
     }
 
