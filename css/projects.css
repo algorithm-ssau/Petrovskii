@@ -19,7 +19,7 @@ body {
 
     border-bottom: 1px solid #ccc;
     border-top: 1px solid #ccc;
-    position: sticky;
+    
 }
 
 .nav {
@@ -715,4 +715,38 @@ body {
 .preview-of-work:hover img {
     cursor: auto;
 }
+html {
+    overscroll-behavior-y: none;
+    scrollbar-width: none; 
+}
+
+body {
+    -moz-osx-font-smoothing: grayscale;
+    touch-action: pan-y; 
+}
+.header-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: -1px;
+    transform: translateZ(0);
+    will-change: transform;
+    padding-top: 1px;
+    margin-top: -1px;
+    
+}
     }
+    @media (max-width: 500px) {
+    .projects-grid:not(.list-mode) .project-item,
+    .concepts-grid:not(.list-mode) .concept-item {
+        max-width: 100% !important;
+        min-width: 100% !important;
+    }
+    
+    .project-item, .concept-item {
+        margin-top: 4vh;
+    }
+    
+    .preview-of-work img {
+        max-height: 400px;
+    }
+}
