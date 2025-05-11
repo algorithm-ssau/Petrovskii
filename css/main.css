@@ -187,4 +187,7 @@ canvas {
     ._nothing{
         display: none;
     }
+    ._brace{
+        padding-bottom: 2vh;
+    }
 }
