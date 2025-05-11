@@ -1,0 +1,105 @@
+.container{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.smart-text{
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 5vh;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0%;    
+}
+.we-do{
+    padding-left: 2%;
+    padding-right: 2%;
+    margin-top: 15vh;
+    border-top: 1px solid #ccc;
+}
+.what-we-do{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.small-text{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    gap: 25%;    
+}
+.big-text{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 152px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+.what-we-do-title,
+.what-we-do-items{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 250%;
+    letter-spacing: 0%;   
+    min-width: 33%;
+    margin-right: 2%; 
+    border-top: 1px solid #000000;
+    padding-top: 1vh;
+}
+
+.design,
+.development,
+.brand-identity{
+    display: flex;
+    padding-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+
+@media (max-width: 1240px) {
+    .smart-text{
+        font-size: 36px;
+    }
+    .big-text{
+        font-size: 95px;
+        
+    } 
+}
+@media (max-width: 768px) {
+    .we-do{
+        margin-top: 5vh;
+    }
+    .smart-text{
+        font-size: 25px;
+    }
+    .big-text{
+        font-size: 52px;
+        margin-bottom: 5vh;
+        
+    } 
+    .small-text{
+        font-size: 14px;
+        
+    }
+.what-we-do-title,
+.what-we-do-items{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 250%;
+    letter-spacing: 0%;   
+    min-width: 49%;
+    margin-right: 2%; 
+    border-top: 1px solid #000000;
+    padding-top: 1vh;
+}
+}
