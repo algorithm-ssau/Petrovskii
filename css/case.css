@@ -1,3 +1,6 @@
+body{
+    background-color: #ffffff;
+}
 .header-projects,
 .header-bottom,
 .Filters,
@@ -204,6 +207,10 @@ text-align: center;
 @media (max-width: 768px) {
 .all-info{
     max-width: 90%;
+}
+.back-button{
+    margin-top: 1vh;
+    margin-bottom: 2vh;
 }
 }
 
