@@ -279,8 +279,8 @@ body {
 
 
 
-.project-item.hiding,
-.concept-item.hiding {
+.hiding,
+.hiding {
     opacity: 0;
     transform: translateY(30px);
     pointer-events: none;
